@@ -1,8 +1,10 @@
-package com.lucas.livros.dto;
+package com.lucas.livros.dto.request;
 
-public class LivroDTO {
+import lombok.Getter;
 
-	private int id;
+@Getter
+public class LivroRequestDto {
+
 	private String titulo;
 	private String autor;
 	private Integer numPaginas;
