@@ -2,6 +2,9 @@ package com.lucas.livros.dto.response;
 
 import com.lucas.livros.models.Livro;
 
+import lombok.Getter;
+
+@Getter
 public class LivroResponseDTO {
 
 	private int id;

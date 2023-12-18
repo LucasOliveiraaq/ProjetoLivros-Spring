@@ -3,7 +3,7 @@ package com.lucas.livros.dto.request;
 import lombok.Getter;
 
 @Getter
-public class LivroRequestDto {
+public class LivroRequestDTO {
 
 	private String titulo;
 	private String autor;
