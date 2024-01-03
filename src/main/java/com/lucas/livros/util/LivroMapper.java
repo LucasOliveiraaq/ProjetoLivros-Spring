@@ -3,10 +3,13 @@ package com.lucas.livros.util;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Component;
+
 import com.lucas.livros.dto.request.LivroRequestDTO;
 import com.lucas.livros.dto.response.LivroResponseDTO;
 import com.lucas.livros.models.Livro;
 
+@Component
 public class LivroMapper {
 
 	public Livro toLivro(LivroRequestDTO livroDto) {

@@ -12,7 +12,7 @@ public interface LivroService {
 	
 	LivroResponseDTO register(LivroRequestDTO registerLivroDto);
 	
-	LivroResponseDTO update(LivroRequestDTO registerLivroDto, int id);
+	LivroResponseDTO update(Integer id, LivroRequestDTO registerLivroDto);
 	
-	String delete(int id);
+	String delete(Integer id);
 }

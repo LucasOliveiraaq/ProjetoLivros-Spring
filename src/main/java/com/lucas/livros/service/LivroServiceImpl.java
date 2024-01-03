@@ -39,14 +39,14 @@ public class LivroServiceImpl implements LivroService{
 	}
 
 	@Override
-	public LivroResponseDTO update(LivroRequestDTO registerLivroDto, int id) {
+	public LivroResponseDTO update(Integer id, LivroRequestDTO registerLivroDto) {
 		Livro livro = returnLivro(id);
 		livroMapper.updateLivroData(livro, registerLivroDto);
 		return livroMapper.toLivroDTO(livroRepository.save(livro));
 	}
 
 	@Override
-	public String delete(int id) {
+	public String delete(Integer id) {
 		livroRepository.deleteById(id);
 		return "Delete livro com id:" + id;
 	}
